@@ -21,14 +21,11 @@
   
   ### System Running Demo
 
-  <!-- HTML5 video player with play button overlay -->
+  <!-- GIF preview with download link for video -->
   <div align="center">
-    <video width="480" controls poster="https://raw.githubusercontent.com/HMAHD/Smart-Bus-Overcrowding-Detection/main/Data/assets/sbod_banner.png">
-      <source src="https://raw.githubusercontent.com/HMAHD/Smart-Bus-Overcrowding-Detection/main/Data/assets/Smart%20Bus%20Overcrowding%20Detection.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+    <img src="Data/assets/demo.gif" alt="SBOD Demo GIF" width="480"/>
     <br/>
-    <strong>▶ Watch Demo Video</strong>
+    <strong>▶ Watch Full Demo Video</strong>
     <br/>
     <a href="https://raw.githubusercontent.com/HMAHD/Smart-Bus-Overcrowding-Detection/main/Data/assets/Smart%20Bus%20Overcrowding%20Detection.mp4">Download video</a>
   </div>
