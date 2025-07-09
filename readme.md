@@ -179,6 +179,68 @@ SBOD/
 4. Upload the code from `Arduino/SBOD_Main/SBOD_Main.ino`
 5. Click "Start Simulation"
 
+### 🖥️ Running Wokwi Simulation Locally (Free Alternative)
+
+Since running the simulation on Wokwi.com requires a paid subscription for ESP32 projects, you can run it locally in VS Code for free using the Wokwi VS Code extension.
+
+#### Prerequisites
+
+- Visual Studio Code
+- PlatformIO extension
+- Wokwi for VS Code extension
+
+#### Setup Instructions
+
+1. **Install Required Extensions in VS Code**:
+
+   - Open VS Code
+   - Install **PlatformIO IDE** extension
+   - Install **Wokwi Simulator** extension
+
+2. **Project Configuration**:
+
+   - Create a new PlatformIO project for ESP32
+   - Copy the Arduino code from `Arduino/SBOD_Main/SBOD_Main.ino`
+   - Create `wokwi.toml` file in project root:
+
+   ```toml
+   [wokwi]
+   version = 1
+   firmware = '.pio/build/esp32dev/firmware.elf'
+   elf = '.pio/build/esp32dev/firmware.elf'
+   ```
+
+3. **Create `diagram.json`**:
+
+   - Copy the Wokwi configuration from `Simulation/wokwi_config.json`
+   - Save as `diagram.json` in project root
+
+4. **Build and Run**:
+   - Build the project: `Ctrl+Shift+B` or PlatformIO Build
+   - Start Wokwi Simulator: `F1` → "Wokwi: Start Simulator"
+
+#### Video Tutorial
+
+For detailed setup instructions, watch this guide:
+
+[![Wokwi VS Code Setup](https://img.youtube.com/vi/3WVz2XdadD0/0.jpg)](https://youtu.be/3WVz2XdadD0)
+
+_How to run Wokwi simulations locally in VS Code_
+
+#### Advantages of Local Simulation
+
+- ✅ Completely free (no subscription required)
+- ✅ Integrated debugging with VS Code
+- ✅ Faster simulation performance
+- ✅ Works offline
+- ✅ Better integration with version control
+
+#### Troubleshooting
+
+- If simulation doesn't start, ensure firmware path in `wokwi.toml` is correct
+- Check that all component connections in `diagram.json` match the pin definitions in code
+- Verify PlatformIO has successfully built the project before starting simulation
+
 **Simulation Controls:**
 
 - 🟢 Green Button: Simulate passenger entry
