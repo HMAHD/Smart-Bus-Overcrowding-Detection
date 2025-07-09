@@ -1,0 +1,9 @@
+KEY PERFORMANCE INDICATORS - Smart Bus Overcrowding Detection System
+============================================================
+
+1. Maximum Capacity Utilization: 100.0%
+2. Percentage of Journey Time Overcrowded: 49.1%
+3. Total Overcrowding Alerts Triggered: 106
+4. Most Crowded Stop: Pettah (83.3% average occupancy)
+5. Peak Hour: 9:00 (79.7% average occupancy)
+6. Average Sensor Mismatch: 2.00 passengers

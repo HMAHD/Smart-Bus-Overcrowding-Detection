@@ -1,0 +1,205 @@
+{
+  "version": 1,
+  "author": "Hasendra Darmasiri - Smart Bus IoT Project with Camera",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": 0,
+      "left": -4.76,
+      "rotate": 180,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": -233.6,
+      "left": 293.6,
+      "attrs": { "pins": "i2c", "i2c-address": "0x27" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn_entry",
+      "top": 89.4,
+      "left": -713.4,
+      "attrs": { "color": "green", "bounce": "0", "label": "Entry IR" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn_exit",
+      "top": 246.2,
+      "left": -576,
+      "attrs": { "color": "red", "bounce": "0", "label": "Exit IR" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn_camera",
+      "top": 256.8,
+      "left": -307,
+      "attrs": { "color": "blue", "bounce": "0", "label": "Camera Trigger" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_green",
+      "top": 111.6,
+      "left": 570.2,
+      "attrs": { "color": "green", "flip": "", "label": "Available" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_yellow",
+      "top": 102,
+      "left": 675.8,
+      "attrs": { "color": "yellow", "flip": "1", "label": "Nearly Full" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_red",
+      "top": 102,
+      "left": 752.6,
+      "attrs": { "color": "red", "flip": "1", "label": "Overcrowded" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_camera",
+      "top": -42,
+      "left": 627.8,
+      "attrs": { "color": "blue", "flip": "", "label": "Camera Active" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led_mismatch",
+      "top": -70.8,
+      "left": 704.6,
+      "attrs": { "color": "orange", "flip": "", "label": "Sensor Mismatch" }
+    },
+    {
+      "type": "wokwi-buzzer",
+      "id": "buzzer1",
+      "top": 438.9,
+      "left": 676.5,
+      "rotate": 90,
+      "attrs": { "volume": "0.1" }
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "pot_flow",
+      "top": 461.8,
+      "left": -586.9,
+      "rotate": 270,
+      "attrs": { "value": "50", "label": "Passenger Flow" }
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "pot_camera",
+      "top": 356.2,
+      "left": -586.9,
+      "rotate": 270,
+      "attrs": { "value": "75", "label": "Camera Accuracy" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r_green",
+      "top": 272.2,
+      "left": 594.35,
+      "rotate": 270,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r_yellow",
+      "top": 243.4,
+      "left": 661.55,
+      "rotate": 270,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r_red",
+      "top": 205,
+      "left": 709.55,
+      "rotate": 270,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r_camera",
+      "top": 43.2,
+      "left": 671.45,
+      "rotate": 270,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r_mismatch",
+      "top": 13,
+      "left": 757.55,
+      "rotate": 270,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-slide-switch",
+      "id": "sw_fusion",
+      "top": -139.6,
+      "left": -409.7,
+      "attrs": { "label": "Sensor Fusion" }
+    }
+  ],
+  "connections": [
+    ["esp:TX", "$serialMonitor:RX", "", []],
+    ["esp:RX", "$serialMonitor:TX", "", []],
+    [
+      "esp:GND.1",
+      "lcd1:GND",
+      "white",
+      ["h115.57", "v-31.6", "h3.33", "v-230.4"]
+    ],
+    ["esp:VIN", "lcd1:VCC", "red", ["v10", "h110", "v-160"]],
+    ["esp:21", "lcd1:SDA", "green", ["v-2.8", "h120", "v-317"]],
+    ["esp:22", "lcd1:SCL", "yellow", ["v-20", "h-43.16", "v-117.5"]],
+    ["esp:2", "btn_entry:1.l", "green", ["h-50", "v26", "h-662.88"]],
+    ["btn_entry:2.l", "esp:GND.2", "black", ["v0", "h-70", "v-150"]],
+    ["esp:15", "btn_exit:1.l", "green", ["v-30", "h-30", "v228.8", "h-545.48"]],
+    ["btn_exit:2.l", "esp:GND.2", "black", ["v67.4", "h575.48"]],
+    ["esp:4", "btn_camera:1.l", "blue", ["v-40", "h80", "v171.6", "h-386.48"]],
+    ["btn_camera:2.l", "esp:GND.2", "black", ["v47.2", "h95.8", "v-150.8"]],
+    ["esp:25", "r_green:1", "green", ["h220", "v50"]],
+    ["r_green:2", "led_green:A", "green", ["v0"]],
+    ["led_green:C", "esp:GND.2", "black", ["v57.6", "h-300", "v-26"]],
+    ["esp:26", "r_yellow:1", "yellow", ["h270", "v50"]],
+    ["r_yellow:2", "led_yellow:A", "yellow", ["v0"]],
+    ["led_yellow:C", "esp:GND.2", "black", ["v40", "h-350", "v-90"]],
+    ["esp:27", "r_red:1", "red", ["h320", "v50"]],
+    ["r_red:2", "led_red:A", "red", ["v0"]],
+    ["led_red:C", "esp:GND.2", "black", ["v28.8", "h-432", "v12.4"]],
+    ["esp:13", "r_camera:1", "blue", ["h270", "v-50"]],
+    ["r_camera:2", "led_camera:A", "blue", ["v0"]],
+    ["led_camera:C", "esp:GND.2", "black", ["v40", "h-364.4", "v145.2"]],
+    ["esp:14", "r_mismatch:1", "orange", ["h320", "v-50"]],
+    ["r_mismatch:2", "led_mismatch:A", "orange", ["v0"]],
+    ["led_mismatch:C", "esp:GND.2", "black", ["v40", "h-400", "v10"]],
+    ["esp:32", "buzzer1:1", "orange", ["h200", "v250"]],
+    ["buzzer1:2", "esp:GND.2", "black", ["h-326.4", "v-295.2"]],
+    ["esp:34", "pot_flow:SIG", "purple", ["v40", "h-100", "v210"]],
+    ["esp:3V3", "pot_flow:VCC", "red", ["h19.57", "v74", "h-89.63", "v229.6"]],
+    ["esp:GND.2", "pot_flow:GND", "blue", ["v28.8", "h-90.8", "v451.2"]],
+    [
+      "esp:35",
+      "pot_camera:SIG",
+      "purple",
+      ["h29.17", "v83.6", "h-149.91", "v172.4"]
+    ],
+    ["esp:3V3", "pot_camera:VCC", "red", ["v54.8", "h-80", "v143.2"]],
+    ["esp:GND.2", "pot_camera:GND", "limegreen", ["v70", "h-130", "v280"]],
+    ["esp:33", "sw_fusion:1", "cyan", ["h150", "v-204.4", "h-648.83"]],
+    [
+      "sw_fusion:2",
+      "esp:3V3",
+      "red",
+      ["h0.1", "v40", "h-170.1", "v219.2", "h717.3", "v31.6"]
+    ],
+    ["sw_fusion:3", "esp:GND.2", "black", ["h0.2", "v60", "h-190.2", "v230.8"]]
+  ],
+  "dependencies": {}
+}

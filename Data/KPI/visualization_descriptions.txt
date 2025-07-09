@@ -1,0 +1,48 @@
+
+VISUALIZATION DESCRIPTIONS FOR REPORT
+=====================================
+
+1. **Passenger Count Over Time (Line Graph)**
+   - Shows average passenger count throughout the day with sensor comparison
+   - Highlights capacity thresholds and peak usage times
+   - Useful for identifying when additional buses are needed
+
+2. **Crowding Levels Heatmap**
+   - Displays occupancy patterns across all stops and hours
+   - Red boxes indicate critical overcrowding conditions
+   - Helps identify problematic stop-time combinations
+
+3. **Alert Frequency Bar Chart**
+   - Shows which stops trigger the most overcrowding alerts
+   - Includes average line for comparison
+   - Guides infrastructure improvement priorities
+
+4. **Bus Status Distribution Pie Chart**
+   - Visualizes time spent in each occupancy state
+   - Exploded overcrowded segment for emphasis
+   - Quantifies overall system performance
+
+5. **Sensor Accuracy Analysis**
+   - Compares IR sensor vs camera readings
+   - Shows how accuracy varies with occupancy levels
+   - Validates sensor fusion approach
+
+6. **Time Series Analysis**
+   - Three-panel view of real-time operations
+   - Shows passenger count, boarding/alighting, and occupancy
+   - Provides detailed operational insights
+
+7. **Stop Performance Dashboard**
+   - Four metrics per stop: flow, occupancy, turnover, alerts
+   - Comprehensive stop-level analysis
+   - Identifies high-demand locations
+
+8. **Peak Hour Analysis**
+   - Highlights morning and evening rush hours
+   - Shows passenger flow patterns and alert frequency
+   - Supports scheduling decisions
+
+9. **KPI Summary Dashboard**
+   - Executive-level overview of key metrics
+   - Visual KPIs for quick assessment
+   - Suitable for management presentations
