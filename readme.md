@@ -19,15 +19,20 @@
 
 <div align="center">
   
-  ### Live Dashboard Demo
-  [**🌐 Visit Live NTC Dashboard**](https://sbod.tiiny.site)
-  
-  ### Video Demonstrations
-  
-  | System Overview | Wokwi Simulation | Dashboard Demo |
-  |:--------------:|:---------------:|:--------------:|
-  | [![System Overview](https://img.youtube.com/vi/VIDEO_ID_1/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID_1) | [![Wokwi Demo](https://img.youtube.com/vi/VIDEO_ID_2/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID_2) | [![Dashboard Demo](https://img.youtube.com/vi/VIDEO_ID_3/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID_3) |
-  | *Complete system walkthrough* | *Hardware simulation in action* | *Real-time monitoring dashboard* |
+  ### System Running Demo
+
+  <!-- Replace the src below with your actual video or GIF URL -->
+  <img src="https://raw.githubusercontent.com/HMAHD/Smart-Bus-Overcrowding-Detection/main/Data/assets/Smart Bus Overcrowding Detection.mp4" alt="SBOD System Running Demo" width="480"/>
+
+  <!-- Or, if you prefer embedding a YouTube video: -->
+  <!--
+  <a href="https://www.youtube.com/watch?v=VIDEO_ID">
+    <img src="https://img.youtube.com/vi/VIDEO_ID/0.jpg" alt="SBOD Demo Video" width="480"/>
+  </a>
+  -->
+
+  <br/>
+  <em>*Watch the SBOD system in action*</em>
 
 </div>
 
@@ -341,10 +346,25 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Team
 
-- **Akash Hasendra** - Project Lead & IoT Development
-- **[Team Member 2]** - Dashboard Development
-- **[Team Member 3]** - Data Analysis
-- **[Team Member 4]** - Documentation
+- **Akash** - Evaluation & Data Analysis
+- **Bhagya** - Proposed Design/Solution & Executive Summary
+- **Yasas** - Project Lead, Executive Summary & Conclusion
+- **Piyumi** - Introduction & Project Overview
+- **Ruwi** - Literature & Technology Review
+- **Nilupul** - Requirements & Objectives Analysis
+- **Amesha** - Discussion & Implementation Analysis
+
+### Team Contributions
+
+| Member  | Primary Responsibility | Key Contributions                                                |
+| ------- | ---------------------- | ---------------------------------------------------------------- |
+| Akash   | Evaluation             | KPI analysis, sensor accuracy testing, data visualization        |
+| Bhagya  | System Design          | Architecture design, component integration, solution development |
+| Yasas   | Project Management     | Executive summary, conclusions, overall coordination             |
+| Piyumi  | Documentation          | Project introduction, background research                        |
+| Ruwi    | Research               | Technology review, IoT standards analysis                        |
+| Nilupul | Requirements           | Functional/non-functional requirements specification             |
+| Amesha  | Analysis               | Security considerations, limitations, operational implications   |
 
 ---
 
