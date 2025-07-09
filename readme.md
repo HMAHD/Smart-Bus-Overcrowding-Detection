@@ -383,7 +383,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Piyumi** - Introduction & Project Overview
 - **Ruwi** - Literature & Technology Review
 - **Nilupul** - Requirements & Objectives Analysis
-- **Amesha** - Discussion & Implementation Analysis
+- **Amasha** - Discussion & Implementation Analysis
 
 ### Team Contributions
 
@@ -395,7 +395,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 | Piyumi  | Documentation          | Project introduction, background research                        |
 | Ruwi    | Research               | Technology review, IoT standards analysis                        |
 | Nilupul | Requirements           | Functional/non-functional requirements specification             |
-| Amesha  | Analysis               | Security considerations, limitations, operational implications   |
+| Amasha  | Analysis               | Security considerations, limitations, operational implications   |
 
 ---
 
