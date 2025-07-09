@@ -106,21 +106,11 @@ Visit our [**Live Dashboard**](https://sbod.tiiny.site) to see:
 
 ### System Architecture
 
-```
-┌─────────────────┐     ┌──────────────┐     ┌─────────────────┐
-│   Bus Sensors   │────▶│    ESP32     │────▶│   4G Network    │
-│ • IR Sensors    │     │ • Processing │     │ • MQTT Protocol │
-│ • Camera        │     │ • Fusion     │     │ • JSON Data     │
-│ • GPS Module    │     │ • Local UI   │     │                 │
-└─────────────────┘     └──────────────┘     └────────┬────────┘
-                                                       │
-                        ┌──────────────┐     ┌─────────▼────────┐
-                        │ NTC Dashboard│◀────│  Cloud Server    │
-                        │ • Live Map   │     │ • Data Storage   │
-                        │ • Analytics  │     │ • Processing     │
-                        │ • Alerts     │     │ • API Services   │
-                        └──────────────┘     └──────────────────┘
-```
+<div align="center">
+  <img src="Data/assets/System Architecture.png" alt="System Architecture Diagram" width="700"/>
+  <br/>
+  <em>Figure: SBOD System Architecture</em>
+</div>
 
 ### Prerequisites
 
@@ -146,15 +136,7 @@ git clone https://github.com/HMAHD/Smart-Bus-Overcrowding-Detection.git
 cd Smart-Bus-Overcrowding-Detection
 ```
 
-#### 2. Running the Wokwi Simulation
-
-1. Open [Wokwi.com](https://wokwi.com)
-2. Create a new ESP32 project
-3. Copy the contents from `Simulation/wokwi_config.json`
-4. Upload the code from `Arduino/SBOD_Main/SBOD_Main.ino`
-5. Click "Start Simulation"
-
-### 3. Running Wokwi Simulation Locally (Free Alternative)
+#### 2. Running Wokwi Simulation Locally (Free Alternative)
 
 Since running the simulation on Wokwi.com requires a paid subscription for ESP32 projects, you can run it locally in VS Code for free using the Wokwi VS Code extension.
 
@@ -175,7 +157,7 @@ Since running the simulation on Wokwi.com requires a paid subscription for ESP32
 2. **Project Configuration**:
 
    - Create a new PlatformIO project for ESP32
-   - Copy the Arduino code from `Arduino/SBOD_Main/SBOD_Main.ino`
+   - Copy the Arduino code from `src/main.cpp`
    - Create `wokwi.toml` file in project root:
 
    ```toml
@@ -187,7 +169,7 @@ Since running the simulation on Wokwi.com requires a paid subscription for ESP32
 
 3. **Create `diagram.json`**:
 
-   - Copy the Wokwi configuration from `Simulation/wokwi_config.json`
+   - Copy the Wokwi configuration from `wokwi_config.json`
    - Save as `diagram.json` in project root
 
 4. **Build and Run**:
@@ -215,7 +197,7 @@ _How to run Wokwi simulations locally in VS Code_
 - 🔵 Blue Button: Trigger camera count
 - 🎚️ Potentiometers: Adjust passenger flow and camera accuracy
 
-#### 4. Setting Up the Dashboard
+#### 3. Setting Up the Dashboard
 
 ```bash
 cd Dashboard
@@ -227,7 +209,7 @@ npx http-server -p 8000
 
 Visit `http://localhost:8000` to view the dashboard locally.
 
-#### 5. Data Generation and Analysis
+#### 4. Data Generation and Analysis
 
 Generate simulation data:
 
@@ -351,7 +333,7 @@ Test scenarios include:
 
 All generated data and visualizations are available in the `Data/` folder:
 
-- **Raw Data**: `bus_overcrowding_data.csv` - 216 data points from simulation
+- **Raw Data**: `Data/bus_overcrowding_data.csv` - 216 data points from simulation
 - **KPI Charts**: `Data/KPI/` - 9 comprehensive visualizations
 - **System Diagrams**: `Data/Visuals/` - Architecture and flow diagrams
 
