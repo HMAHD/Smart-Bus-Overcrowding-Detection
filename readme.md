@@ -21,19 +21,19 @@
   
   ### System Running Demo
 
-  <!-- Embedded video for demo -->
-  <video width="480" controls>
-    <source src="https://raw.githubusercontent.com/HMAHD/Smart-Bus-Overcrowding-Detection/main/Data/assets/Smart%20Bus%20Overcrowding%20Detection.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <br/>
-  <a href="https://raw.githubusercontent.com/HMAHD/Smart-Bus-Overcrowding-Detection/main/Data/assets/Smart%20Bus%20Overcrowding%20Detection.mp4">Download video</a>
-
-  <!-- Or, if you prefer embedding a YouTube video: -->
+  <!-- HTML5 video player with play button overlay -->
+  <div align="center">
+    <video width="480" controls poster="https://raw.githubusercontent.com/HMAHD/Smart-Bus-Overcrowding-Detection/main/Data/assets/sbod_banner.png">
+      <source src="https://raw.githubusercontent.com/HMAHD/Smart-Bus-Overcrowding-Detection/main/Data/assets/Smart%20Bus%20Overcrowding%20Detection.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <br/>
+    <strong>▶ Watch Demo Video</strong>
+    <br/>
+    <a href="https://raw.githubusercontent.com/HMAHD/Smart-Bus-Overcrowding-Detection/main/Data/assets/Smart%20Bus%20Overcrowding%20Detection.mp4">Download video</a>
+  </div>
   <!--
-  <a href="https://www.youtube.com/watch?v=VIDEO_ID">
-    <img src="https://img.youtube.com/vi/VIDEO_ID/0.jpg" alt="SBOD Demo Video" width="480"/>
-  </a>
+  If you do not have a YouTube video, replace VIDEO_ID with your actual video ID or keep the previous image+link fallback.
   -->
 
   <br/>
@@ -389,6 +389,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <div align="center">
+  <strong>Making Public Transport Smarter, One Bus at a Time! 🚌✨</strong>
+  
+  ⭐ Star us on GitHub — it helps!
+</div>
   <strong>Making Public Transport Smarter, One Bus at a Time! 🚌✨</strong>
   
   ⭐ Star us on GitHub — it helps!
