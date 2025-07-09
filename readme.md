@@ -146,32 +146,7 @@ git clone https://github.com/HMAHD/Smart-Bus-Overcrowding-Detection.git
 cd Smart-Bus-Overcrowding-Detection
 ```
 
-#### 2. Project Structure
-
-```
-SBOD/
-├── Arduino/
-│   └── SBOD_Main/
-│       └── SBOD_Main.ino      # Main ESP32 code
-├── Dashboard/
-│   ├── index.html             # NTC Dashboard
-│   ├── css/
-│   └── js/
-├── Data/
-│   ├── bus_overcrowding_data.csv
-│   ├── KPI/                   # Performance visualizations
-│   └── Visuals/               # System diagrams
-├── Scripts/
-│   ├── bus_data_generator.py  # Generate simulation data
-│   ├── evaluation_insights.py # Analysis scripts
-│   └── kpi_visualizations.py  # Create charts
-├── Simulation/
-│   └── wokwi_config.json      # Wokwi simulation setup
-└── Documentation/
-    └── *.docx                 # Full project report
-```
-
-#### 3. Running the Wokwi Simulation
+#### 2. Running the Wokwi Simulation
 
 1. Open [Wokwi.com](https://wokwi.com)
 2. Create a new ESP32 project
@@ -179,7 +154,7 @@ SBOD/
 4. Upload the code from `Arduino/SBOD_Main/SBOD_Main.ino`
 5. Click "Start Simulation"
 
-### 🖥️ Running Wokwi Simulation Locally (Free Alternative)
+### 3. Running Wokwi Simulation Locally (Free Alternative)
 
 Since running the simulation on Wokwi.com requires a paid subscription for ESP32 projects, you can run it locally in VS Code for free using the Wokwi VS Code extension.
 
@@ -226,14 +201,6 @@ For detailed setup instructions, watch this guide:
 [![Wokwi VS Code Setup](https://img.youtube.com/vi/3WVz2XdadD0/0.jpg)](https://youtu.be/3WVz2XdadD0)
 
 _How to run Wokwi simulations locally in VS Code_
-
-#### Advantages of Local Simulation
-
-- ✅ Completely free (no subscription required)
-- ✅ Integrated debugging with VS Code
-- ✅ Faster simulation performance
-- ✅ Works offline
-- ✅ Better integration with version control
 
 #### Troubleshooting
 
