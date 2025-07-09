@@ -389,11 +389,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <div align="center">
-  <strong>Making Public Transport Smarter, One Bus at a Time! 🚌✨</strong>
-  
-  ⭐ Star us on GitHub — it helps!
-</div>
-  <strong>Making Public Transport Smarter, One Bus at a Time! 🚌✨</strong>
+  <strong>Making Public Transport Smarter, One Bus at a Time! 🚌</strong>
   
   ⭐ Star us on GitHub — it helps!
 </div>
