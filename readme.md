@@ -21,8 +21,13 @@
   
   ### System Running Demo
 
-  <!-- Replace the src below with your actual video or GIF URL -->
-  <img src="https://raw.githubusercontent.com/HMAHD/Smart-Bus-Overcrowding-Detection/main/Data/assets/Smart Bus Overcrowding Detection.mp4" alt="SBOD System Running Demo" width="480"/>
+  <!-- Embedded video for demo -->
+  <video width="480" controls>
+    <source src="https://raw.githubusercontent.com/HMAHD/Smart-Bus-Overcrowding-Detection/main/Data/assets/Smart%20Bus%20Overcrowding%20Detection.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <br/>
+  <a href="https://raw.githubusercontent.com/HMAHD/Smart-Bus-Overcrowding-Detection/main/Data/assets/Smart%20Bus%20Overcrowding%20Detection.mp4">Download video</a>
 
   <!-- Or, if you prefer embedding a YouTube video: -->
   <!--
